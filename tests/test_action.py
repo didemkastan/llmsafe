@@ -24,7 +24,8 @@ def run_action(
     if os.name == "nt":
         pytest.skip(
             "The direct run-action.sh harness requires Unix bash; "
-            "the composite action declares shell: bash and is covered by the Ubuntu action job."
+            "the composite action declares shell: bash and is covered by "
+            "the Ubuntu action job."
         )
 
     environment = os.environ.copy()
